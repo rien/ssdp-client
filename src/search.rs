@@ -37,7 +37,7 @@ impl SearchResponse {
 
 #[cfg(not(windows))]
 async fn get_bind_addr() -> Result<SocketAddr, std::io::Error> {
-    Ok(([0, 0, 0, 0], 0).into())
+    Ok(([0, 0, 0, 0], 1900).into())
 }
 
 #[cfg(windows)]
